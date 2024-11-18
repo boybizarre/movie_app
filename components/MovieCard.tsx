@@ -61,11 +61,11 @@ export default function MovieCard({ movie }: any) {
         </CardContent>
 
         {/* Card Footer */}
-        <CardFooter className='p-4 flex justify-between items-center'>
-          <Link href={`/movie/${id}`}>
+        <CardFooter className='p-4 flex justify-between items-center flex-col gap-3 lg:flex-row lg:gap-3'>
+          <Link className='w-full' href={`/movie/${id}`}>
             <Button
               variant={'ghost'}
-              className='bg-foreground text-muted text-sm font-semibold py-1 px-4 rounded hover:bg-muted-foreground hover:text-muted-background'
+              className='bg-foreground text-muted text-sm font-semibold py-1 px-4 rounded hover:bg-muted-foreground hover:text-muted-background w-full lg:w-fit'
             >
               View Details
             </Button>
@@ -74,7 +74,7 @@ export default function MovieCard({ movie }: any) {
           <Button
             onClick={() => handleFavoriteClick(movie)}
             variant={'outline'}
-            className='bg-muted text-foreground text-sm font-semibold py-1 px-4 rounded hover:bg-muted-foreground hover:text-muted-background'
+            className='bg-muted text-foreground text-sm font-semibold py-1 px-4 rounded hover:bg-muted-foreground hover:text-muted-background w-full'
           >
             {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
           </Button>

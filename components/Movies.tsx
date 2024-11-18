@@ -41,7 +41,7 @@ export default function Movies() {
           </p>
         </div>
       )}
-      <div className='container mx-auto grid grid-cols-1 gap-6 min-h-24 px-12 py-6 rounded-3xl sm:grid-cols-2 lg:grid-cols-3'>
+      <div className='container mx-auto grid grid-cols-1 gap-6 min-h-24 px-12 py-6 rounded-3xl lg:grid-cols-2 xl:grid-cols-3'>
         {filteredMovies &&
           filteredMovies.map((movie: any) => (
             <MovieCard key={movie.id} movie={movie} />

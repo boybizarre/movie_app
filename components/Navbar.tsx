@@ -5,7 +5,7 @@ import Search from '@/components/Search';
 
 function Navbar() {
   return (
-    <div className='bg-background'>
+    <div className='bg-background sticky top-0 left-0 z-10'>
       <div className='container mx-auto'>
         {/* Main Navbar */}
         <nav className='flex flex-wrap items-center justify-between h-24 px-6'>
